@@ -62,7 +62,7 @@ class RemoteAdyen12Test < Test::Unit::TestCase
     }))
     assert_success response
     assert_failure recurring
-    assert_equal 'Unknown', recurring.message
+    assert_equal 'Please supply paymentDetails', recurring.message
   end
 
   def test_list_recurring_details
