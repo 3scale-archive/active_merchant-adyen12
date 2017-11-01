@@ -29,7 +29,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'activemerchant', '~> 1.74.0'
-  spec.add_development_dependency 'bundler', '~> 1.16.a'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'minitest', '~> 5.0'
+
+  # I would love to do this kind of thing but sadly it is chicken-egg problem
+  # activemerchant = Gem::Specification.find_by_name('activemerchant')
+  # activemerchant.development_dependencies.each do |dep|
+  #   spec.add_development_dependency dep.name, dep.requirement
+  # end
+  spec.add_development_dependency('rake')
+  spec.add_development_dependency('test-unit', '~> 3')
+  spec.add_development_dependency('mocha', '~> 1')
+  spec.add_development_dependency('thor')
 end
