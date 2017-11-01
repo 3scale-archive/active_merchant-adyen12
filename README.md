@@ -2,9 +2,23 @@
 
 [![Build Status](https://travis-ci.org/3scale/active_merchant-adyen12.svg?branch=master)](https://travis-ci.org/3scale/active_merchant-adyen12)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/active_merchant/adyen12`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem is to be used with [activemerchant](https://github.com/activemerchant/active_merchant)
+It adds another gateway called Adyen12 to use with [Adyen](https://www.adyen.com/) payment solution.
+It uses the old V12 API
 
-TODO: Delete this and the text above, and describe your gem
+There is already an integration of Adyen in the official activemerchant gem
+However it lacks recurring payment functionality.
+
+## Why not making a Pull Request to the activemerchant repository?
+
+**YES OF COURSE** a pull request there is the way to do it. But because of those reason we do not do it:
+
+- this is just extracted from [https://github.com/3scale/active_merchant/tree/adyen](https://github.com/3scale/active_merchant/tree/adyen)
+- we do not have time to make a proper pull request
+- we cannot wait for the PR to be merged by them
+
+
+**Still** we believe that this is the correct thing to do.
 
 ## Installation
 
@@ -22,9 +36,6 @@ Or install it yourself as:
 
     $ gem install active_merchant-adyen12
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
