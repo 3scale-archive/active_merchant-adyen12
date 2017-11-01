@@ -1,5 +1,13 @@
-sudo: false
 language: ruby
+script: "rake test"
+sudo: false
+cache: bundler
+
 rvm:
-  - 2.3.3
-before_install: gem install bundler -v 1.16.0.pre.3
+- 2.3.4
+- 2.4.1
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
