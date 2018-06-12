@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'activemerchant', '~> 1.74.0'
+  spec.add_runtime_dependency 'activemerchant', '~> 1.79.2'
 
   # I would love to do this kind of thing but sadly it is chicken-egg problem
   # activemerchant = Gem::Specification.find_by_name('activemerchant')
