@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 group :development, :test do
-  gem 'activemerchant', github: 'activemerchant/active_merchant'
+  gem 'activemerchant', github: 'activemerchant/active_merchant', tag: 'v1.77.0'
 
 end
 
