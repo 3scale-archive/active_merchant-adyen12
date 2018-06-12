@@ -76,7 +76,7 @@ class RemoteAdyen12Test < Test::Unit::TestCase
     assert_equal '1111', details_hash['card']['number']
     assert_equal '8', details_hash['card']['expiryMonth']
     assert_equal '2018', details_hash['card']['expiryYear']
-    assert_equal 'John Doe', details_hash['card']['holderName']
+    assert_equal 'Test Card', details_hash['card']['holderName']
   end
 
   def test_successful_authorize_and_capture
